@@ -3,17 +3,12 @@ import "./Heropopup.css";
 
 // Import your image - choose the correct path for your project
 import pmsuryaghar from '../../assets/img/pmsuryaghar.webp';
-// Alternative paths if needed:
-// import pmsuryaghar from '/src/assets/img/pmsuryaghar.webp';
-// import pmsuryaghar from './assets/img/pmsuryaghar.webp';
 
-// For testing with a placeholder image (uncomment if your image is not loading)
-// const pmsuryaghar = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&h=600&fit=crop";
 
 const Heropopup = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [timeLeft, setTimeLeft] = useState({
-    days: 297,
+    days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0
@@ -26,10 +21,8 @@ const Heropopup = () => {
       setIsPopupOpen(true);
     }, 500);
 
-    // Set end date (297 days from today)
-    const endDate = new Date();
-    endDate.setDate(endDate.getDate() + 297);
-    endDate.setHours(23, 59, 59, 999);
+    // Set end date to March 31, 2027 at 23:59:59
+    const endDate = new Date(2027, 2, 31, 23, 59, 59, 999); // Month is 0-indexed, so 2 = March
 
     // Countdown timer
     const countdownInterval = setInterval(() => {
@@ -164,7 +157,7 @@ const Heropopup = () => {
               </button>
 
               <p className="popup-footer">
-                Limited slots available. Offer valid until subsidy ends.
+                Limited slots available. Offer valid until March 31, 2027.
               </p>
             </div>
           </div>

@@ -422,3 +422,70 @@
     font-size: 20px;
   }
 }
+
+/* Add these styles to your existing Pmsuryaghar.css */
+
+/* Offer End Counter Styles */
+.offer-end-counter {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.counter-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--bsp-accent);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.counter-timer span {
+  font-family: 'Courier New', monospace;
+  font-weight: 800;
+}
+
+.counter-days, .counter-hours, .counter-mins, .counter-secs {
+  color: #FFD700;
+}
+
+.counter-separator {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.offer-end-text {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive for counter */
+@media (max-width: 768px) {
+  .counter-timer {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .offer-end-text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-timer {
+    font-size: 10px;
+    gap: 2px;
+  }
+  
+  .offer-end-text {
+    font-size: 7px;
+  }
+}
