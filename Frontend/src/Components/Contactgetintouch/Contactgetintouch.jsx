@@ -125,8 +125,8 @@ const Contactgetintouch = () => {
               </div>
               <div>
                 <p>Email Us</p>
-                <a href="mailto:bspprojectsolutions@gmail.com">
-                  bspprojectsolutions@gmail.com
+                <a href="mailto:freedom.bhadrak@gmail.com">
+                  freedom.bhadrak@gmail.com
                 </a>
               </div>
             </div>

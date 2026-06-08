@@ -78,9 +78,14 @@ const Navbar = () => {
   </a>
 </div>
             <div className="Navbar-contact-item">
-              <FaEnvelope className="Navbar-contact-icon" />
-              <span>bspprojectsolutions@gmail.com</span>
-            </div>
+  <FaEnvelope className="Navbar-contact-icon" />
+  <a
+    href="mailto:freedom.bhadrak@gmail.com"
+    className="Navbar-contact-link"
+  >
+    freedom.bhadrak@gmail.com
+  </a>
+</div>
           </div>
 
          

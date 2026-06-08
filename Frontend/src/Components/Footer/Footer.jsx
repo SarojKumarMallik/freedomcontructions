@@ -141,10 +141,10 @@ const Footer = () => {
 
                   <p>
                     <a
-                      href="mailto:bspprojectsolutions@gmail.com"
+                      href="mailto:freedom.bhadrak@gmail.com"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <FaEnvelope /> bspprojectsolutions@gmail.com
+                      <FaEnvelope /> freedom.bhadrak@gmail.com
                     </a>
                   </p>
                 </div>
