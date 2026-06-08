@@ -1,0 +1,232 @@
+/* ================= WRAPPER ================= */
+
+.Solaramcsolarpanels-wrapper {
+  padding: 100px 20px;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0A1A4A 0%, #071238 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Solaramcsolarpanels-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.08), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.Solaramcsolarpanels-container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= TITLES ================= */
+
+.Solaramcsolarpanels-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.Solaramcsolarpanels-subtitle {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 50px;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* ================= TABLE ================= */
+
+.Solaramcsolarpanels-table-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.Solaramcsolarpanels-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Solaramcsolarpanels-table th,
+.Solaramcsolarpanels-table td {
+  padding: 18px 22px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.Solaramcsolarpanels-table th {
+  font-weight: 800;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+}
+
+.Solaramcsolarpanels-table td {
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.Solaramcsolarpanels-table tr:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+/* Highlight Solar AMC - Gold Theme */
+.highlight-head {
+  color: #FFD700;
+  font-weight: 800;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.highlight {
+  color: #FFD700;
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.05);
+  border-left: 3px solid #FFD700;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .Solaramcsolarpanels-wrapper {
+    padding: 80px 20px;
+  }
+  
+  .Solaramcsolarpanels-title {
+    font-size: 34px;
+  }
+  
+  .Solaramcsolarpanels-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .Solaramcsolarpanels-table th,
+  .Solaramcsolarpanels-table td {
+    padding: 15px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Solaramcsolarpanels-wrapper {
+    padding: 60px 16px;
+  }
+
+  .Solaramcsolarpanels-title {
+    font-size: 28px;
+  }
+
+  .Solaramcsolarpanels-subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  /* Convert table into stacked layout */
+  .Solaramcsolarpanels-table thead {
+    display: none;
+  }
+
+  .Solaramcsolarpanels-table,
+  .Solaramcsolarpanels-table tbody,
+  .Solaramcsolarpanels-table tr,
+  .Solaramcsolarpanels-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .Solaramcsolarpanels-table tr {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 215, 0, 0.15);
+  }
+
+  .Solaramcsolarpanels-table td {
+    border: none;
+    padding: 8px 0;
+    font-size: 14px;
+    position: relative;
+    padding-left: 110px;
+    border-bottom: none;
+  }
+
+  .Solaramcsolarpanels-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-weight: 700;
+    color: #FFD700;
+    width: 100px;
+  }
+  
+  .highlight {
+    border-left: none;
+    background: rgba(255, 215, 0, 0.1);
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Solaramcsolarpanels-wrapper {
+    padding: 50px 15px;
+  }
+
+  .Solaramcsolarpanels-title {
+    font-size: 24px;
+  }
+  
+  .Solaramcsolarpanels-subtitle {
+    font-size: 14px;
+  }
+
+  .Solaramcsolarpanels-table td {
+    font-size: 13px;
+    padding-left: 100px;
+  }
+  
+  .Solaramcsolarpanels-table td::before {
+    width: 90px;
+    font-size: 12px;
+  }
+  
+  .highlight {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Solaramcsolarpanels-title {
+    font-size: 22px;
+  }
+  
+  .Solaramcsolarpanels-table td {
+    font-size: 12px;
+    padding-left: 90px;
+  }
+  
+  .Solaramcsolarpanels-table td::before {
+    width: 85px;
+    font-size: 11px;
+  }
+  
+  .highlight {
+    padding-left: 90px;
+  }
+}

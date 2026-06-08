@@ -1,0 +1,242 @@
+/* SECTION */
+.Solaramcservices-section {
+  position: relative;
+  padding: 50px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+/* Glow - updated to gold */
+.Solaramcservices-glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent 70%);
+  top: -250px;
+  left: -250px;
+  z-index: 0;
+}
+
+.Solaramcservices-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER */
+.Solaramcservices-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Solaramcservices-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.Solaramcservices-header h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #0A1A4A;
+}
+
+.Solaramcservices-header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Solaramcservices-header p {
+  max-width: 800px;
+  margin: auto;
+  color: #5f6f81;
+  line-height: 1.8;
+}
+
+/* DESCRIPTION */
+.Solaramcservices-description {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 80px auto;
+}
+
+.Solaramcservices-description p {
+  font-size: 16px;
+  color: #5f6f81;
+  line-height: 1.8;
+}
+
+/* FEATURES */
+.Solaramcservices-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.Solaramcservices-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  border: 1px solid #e6eef5;
+  text-align: center;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(10, 26, 74, 0.06);
+}
+
+.Solaramcservices-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.Solaramcservices-icon {
+  font-size: 38px;
+  color: #FFD700;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.Solaramcservices-card:hover .Solaramcservices-icon {
+  transform: scale(1.1);
+}
+
+.Solaramcservices-card h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #0A1A4A;
+}
+
+.Solaramcservices-card p {
+  font-size: 14px;
+  color: #5f6f81;
+  line-height: 1.6;
+}
+
+/* NOTE */
+.Solaramcservices-note {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 215, 0, 0.15);
+  padding-top: 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .Solaramcservices-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .Solaramcservices-header h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Solaramcservices-header h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Solaramcservices-section {
+    padding: 60px 20px;
+  }
+
+  /* LEFT ALIGN ON MOBILE */
+  .Solaramcservices-header {
+    text-align: left;
+  }
+
+  .Solaramcservices-header p {
+    margin: 0;
+  }
+
+  .Solaramcservices-description {
+    text-align: left;
+    margin: 0 0 50px 0;
+  }
+
+  .Solaramcservices-features {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .Solaramcservices-header h2 {
+    font-size: 28px;
+  }
+
+  .Solaramcservices-card {
+    padding: 30px 20px;
+  }
+  
+  .Solaramcservices-card h4 {
+    font-size: 17px;
+  }
+
+  .Solaramcservices-note {
+    text-align: left;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Solaramcservices-section {
+    padding: 50px 16px;
+  }
+  
+  .Solaramcservices-header h2 {
+    font-size: 26px;
+  }
+  
+  .Solaramcservices-badge {
+    font-size: 11px;
+    padding: 6px 16px;
+  }
+  
+  .Solaramcservices-header p {
+    font-size: 14px;
+  }
+  
+  .Solaramcservices-description p {
+    font-size: 14px;
+  }
+  
+  .Solaramcservices-icon {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Solaramcservices-header h2 {
+    font-size: 24px;
+  }
+
+  .Solaramcservices-badge {
+    font-size: 10px;
+  }
+  
+  .Solaramcservices-card {
+    padding: 25px 18px;
+  }
+  
+  .Solaramcservices-card h4 {
+    font-size: 16px;
+  }
+  
+  .Solaramcservices-card p {
+    font-size: 13px;
+  }
+}

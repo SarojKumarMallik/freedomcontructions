@@ -1,0 +1,139 @@
+:root {
+  --primary: #0f3d5e;
+  --primary-dark: #0b2e46;
+  --light-bg: #f4f8fb;
+  --white: #ffffff;
+}
+
+/* ================= PREMIUM BACKGROUND ================= */
+
+.pagenotfound-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(15,61,94,0.12), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(11,46,70,0.12), transparent 40%),
+    linear-gradient(135deg, #0f3d5e 0%, #1b5c8a 60%, #2e7fbf 100%);
+}
+
+/* ================= CONTAINER ================= */
+
+.pagenotfound-container {
+  text-align: center;
+  max-width: 650px;
+  padding: 60px 40px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 30px;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.25);
+  backdrop-filter: blur(15px);
+  animation: fadeUp 0.8s ease;
+}
+
+/* Emoji Icon */
+.error-code {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.error-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+}
+
+/* Subtitle */
+.error-text {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Mini Game */
+.mini-game {
+  margin-bottom: 35px;
+}
+
+.game-text {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+canvas {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e6f3ff, #ffffff);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.home-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+.home-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .pagenotfound-container {
+    padding: 40px 25px;
+  }
+
+  .error-title {
+    font-size: 24px;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .error-title {
+    font-size: 20px;
+  }
+
+  .error-text {
+    font-size: 14px;
+  }
+
+  .home-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}

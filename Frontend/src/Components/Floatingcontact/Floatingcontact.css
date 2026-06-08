@@ -1,0 +1,101 @@
+/* ================= CONTAINER ================= */
+
+.floating-container {
+  position: fixed;
+  right: 0;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+/* Vertical Stack */
+.floating-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ================= TOGGLE BUTTON (TOP) ================= */
+
+.floating-toggle-btn {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  font-size: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 8px;
+}
+
+
+
+/* ================= CONTACT WRAPPER ================= */
+
+.floating-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* Open */
+.floating-contact-wrapper.open {
+  width: 50px;
+  opacity: 1;
+}
+
+/* Closed */
+.floating-contact-wrapper.closed {
+  width: 0;
+  opacity: 0;
+}
+
+/* ================= BUTTONS ================= */
+
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* WhatsApp */
+.floating-btn.whatsapp {
+  background: #25d366;
+}
+
+/* Call */
+.floating-btn.call {
+  background: #1d4ed8;
+  border-radius: 0 0 0 18px;
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .floating-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .floating-toggle-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}

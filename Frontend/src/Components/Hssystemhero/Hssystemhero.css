@@ -1,0 +1,185 @@
+/* ================= SECTION ================= */
+.Hssystemhero-section {
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8fb 100%);
+ 
+  overflow: hidden;
+}
+
+/* ================= CONTAINER ================= */
+.Hssystemhero-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ================= BADGE ================= */
+.Hssystemhero-badge {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* ================= TITLE ================= */
+.Hssystemhero-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0A1A4A;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.Hssystemhero-title span {
+  background: linear-gradient(90deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= DESCRIPTION ================= */
+.Hssystemhero-description {
+  font-size: 16px;
+  color: #5f6f81;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  max-width: 520px;
+}
+
+/* ================= BUTTONS ================= */
+.Hssystemhero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.Hssystemhero-btn {
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Primary Button */
+.Hssystemhero-btn.primary {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.25);
+}
+
+.Hssystemhero-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.35);
+}
+
+/* Secondary Button */
+.Hssystemhero-btn.secondary {
+  border: 2px solid #FFD700;
+  color: #0A1A4A;
+  background: transparent;
+}
+
+.Hssystemhero-btn.secondary:hover {
+  background: #FFD700;
+  color: #0A1A4A;
+  transform: translateY(-3px);
+}
+
+/* ================= IMAGE ================= */
+.Hssystemhero-image-wrapper {
+  text-align: center;
+}
+
+.Hssystemhero-image-wrapper img {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  
+}
+
+.Hssystemhero-image-wrapper img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 15px 35px rgba(255, 215, 0, 0.15));
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .Hssystemhero-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .Hssystemhero-description {
+    margin: 0 0 30px 0;
+    max-width: 100%;
+  }
+
+  .Hssystemhero-buttons {
+    justify-content: left;
+  }
+  
+  .Hssystemhero-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Hssystemhero-title {
+    font-size: 36px;
+  }
+  
+  .Hssystemhero-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Hssystemhero-title {
+    font-size: 28px;
+  }
+
+  .Hssystemhero-section {
+    padding: 50px 16px;
+  }
+  
+  .Hssystemhero-badge {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+  
+  .Hssystemhero-description {
+    font-size: 14px;
+  }
+  
+  .Hssystemhero-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Hssystemhero-title {
+    font-size: 24px;
+  }
+  
+  .Hssystemhero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .Hssystemhero-btn {
+    text-align: center;
+  }
+}

@@ -1,0 +1,220 @@
+/* SECTION */
+
+.Offgridsystemfaq-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0A1A4A, #071238);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle background glow - updated to gold */
+.Offgridsystemfaq-section::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.15), transparent);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+}
+
+.Offgridsystemfaq-container {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER */
+
+.Offgridsystemfaq-header {
+  text-align: center;
+  margin-bottom: 80px;
+  color: #ffffff;
+}
+
+.Offgridsystemfaq-header h2 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.Offgridsystemfaq-header h2 span {
+  background: linear-gradient(90deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Offgridsystemfaq-header p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* FAQ ITEM */
+
+.Offgridsystemfaq-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+.Offgridsystemfaq-item:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 15px 50px rgba(255, 215, 0, 0.12);
+}
+
+/* QUESTION */
+
+.Offgridsystemfaq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+
+.Offgridsystemfaq-question h4 {
+  font-size: 17px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.Offgridsystemfaq-item:hover .Offgridsystemfaq-question h4 {
+  color: #FFD700;
+}
+
+/* ICON */
+
+.Offgridsystemfaq-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+  color: #0A1A4A;
+  font-weight: bold;
+}
+
+.Offgridsystemfaq-item.active .Offgridsystemfaq-icon {
+  transform: rotate(45deg);
+}
+
+/* ANSWER */
+
+.Offgridsystemfaq-answer {
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Offgridsystemfaq-answer-inner {
+  padding: 0 30px 25px 30px;
+}
+
+.Offgridsystemfaq-answer p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .Offgridsystemfaq-header h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Offgridsystemfaq-section {
+    padding: 50px 16px;
+  }
+  
+  .Offgridsystemfaq-header {
+    margin-bottom: 50px;
+  }
+  
+  .Offgridsystemfaq-header h2 {
+    font-size: 28px;
+  }
+  
+  .Offgridsystemfaq-header p {
+    font-size: 14px;
+  }
+
+  .Offgridsystemfaq-question h4 {
+    font-size: 15px;
+  }
+  
+  .Offgridsystemfaq-question {
+    padding: 18px 22px;
+  }
+  
+  .Offgridsystemfaq-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .Offgridsystemfaq-answer-inner {
+    padding: 0 22px 18px 22px;
+  }
+  
+  .Offgridsystemfaq-answer p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Offgridsystemfaq-header h2 {
+    font-size: 24px;
+  }
+  
+  .Offgridsystemfaq-question h4 {
+    font-size: 14px;
+  }
+  
+  .Offgridsystemfaq-question {
+    padding: 15px 18px;
+  }
+  
+  .Offgridsystemfaq-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  
+  .Offgridsystemfaq-answer-inner {
+    padding: 0 18px 15px 18px;
+  }
+  
+  .Offgridsystemfaq-answer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Offgridsystemfaq-header h2 {
+    font-size: 22px;
+  }
+  
+  .Offgridsystemfaq-question h4 {
+    font-size: 13px;
+  }
+}

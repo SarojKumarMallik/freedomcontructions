@@ -1,0 +1,263 @@
+/* SECTION */
+.platform-section {
+  padding: 30px 20px;
+  background: linear-gradient(180deg, #ffffff, #f4f8fb);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.platform-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.platform-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER */
+.platform-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.platform-label {
+  color: #FFD700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.1);
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.platform-header h2 {
+  font-size: 40px;
+  margin: 15px 0;
+  color: #0A1A4A;
+}
+
+.platform-header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.platform-header p {
+  color: #5f6f81;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #FFD700, #E6B800);
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* TIMELINE ITEM */
+.timeline-item {
+  width: 50%;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+/* CARD */
+.timeline-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(10, 26, 74, 0.08);
+  transition: 0.4s ease;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.timeline-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.25);
+}
+
+/* ICON */
+.timeline-icon {
+  font-size: 24px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.timeline-content h4 {
+  font-size: 14px;
+  color: #FFD700;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  color: #0A1A4A;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #5f6f81;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .platform-section {
+    padding: 50px 20px;
+  }
+  
+  .platform-header {
+    margin-bottom: 60px;
+  }
+  
+  .platform-header h2 {
+    font-size: 34px;
+  }
+  
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 60px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+  }
+  
+  .timeline-item.left {
+    text-align: left;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .platform-header h2 {
+    font-size: 30px;
+  }
+  
+  .platform-header p {
+    font-size: 15px;
+  }
+  
+  .platform-label {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+  
+  .timeline-item {
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .timeline::before {
+    left: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .platform-section {
+    padding: 50px 15px;
+  }
+
+  .platform-header h2 {
+    font-size: 26px;
+  }
+  
+  .platform-header p {
+    font-size: 14px;
+  }
+
+  .timeline-content h3 {
+    font-size: 17px;
+  }
+
+  .timeline-content p {
+    font-size: 14px;
+  }
+  
+  .timeline-item {
+    padding-left: 45px;
+  }
+  
+  .timeline::before {
+    left: 12px;
+    width: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform-section {
+    padding: 40px 15px;
+  }
+  
+  .platform-header h2 {
+    font-size: 24px;
+  }
+  
+  .timeline-content {
+    padding: 18px;
+  }
+  
+  .timeline-content h3 {
+    font-size: 16px;
+  }
+  
+  .timeline-content p {
+    font-size: 13px;
+  }
+  
+  .timeline-icon {
+    font-size: 20px;
+  }
+}

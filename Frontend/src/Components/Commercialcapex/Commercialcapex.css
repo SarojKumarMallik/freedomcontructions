@@ -1,0 +1,278 @@
+/* ================= SECTION ================= */
+
+.Commercialcapex-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9fbfd, #ffffff);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Commercialcapex-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.Commercialcapex-container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= HEADER ================= */
+
+.Commercialcapex-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.Commercialcapex-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.Commercialcapex-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0A1A4A;
+}
+
+.Commercialcapex-header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Commercialcapex-header p {
+  max-width: 720px;
+  margin: auto;
+  color: #5f6f81;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= TABLE ================= */
+
+.Commercialcapex-table-wrapper {
+  overflow-x: auto;
+}
+
+.Commercialcapex-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(10, 26, 74, 0.08);
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.Commercialcapex-table th {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  padding: 22px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Commercialcapex-table td {
+  padding: 20px;
+  border-bottom: 1px solid #e6edf3;
+  font-size: 15px;
+  color: #0A1A4A;
+  transition: 0.3s ease;
+}
+
+.Commercialcapex-table tr:hover td {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.Commercialcapex-category {
+  font-weight: 600;
+  color: #FFD700;
+}
+
+/* Highlight columns - Updated to Gold tints */
+.Commercialcapex-table td:nth-child(2) {
+  background: rgba(255, 215, 0, 0.03);
+}
+
+.Commercialcapex-table td:nth-child(3) {
+  background: rgba(255, 215, 0, 0.06);
+}
+
+/* ================= MOBILE CARDS ================= */
+
+.Commercialcapex-mobile {
+  display: none;
+}
+
+.Commercialcapex-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(10, 26, 74, 0.06);
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.Commercialcapex-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 20px 45px rgba(255, 215, 0, 0.08);
+}
+
+.Commercialcapex-card h4 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0A1A4A;
+}
+
+.Commercialcapex-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.capex-box,
+.opex-box {
+  padding: 18px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.capex-box {
+  background: rgba(255, 215, 0, 0.05);
+  border-left: 4px solid #FFD700;
+}
+
+.opex-box {
+  background: rgba(255, 215, 0, 0.08);
+  border-left: 4px solid #E6B800;
+}
+
+.capex-box strong {
+  color: #0A1A4A;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.opex-box strong {
+  color: #0A1A4A;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.capex-box p,
+.opex-box p {
+  color: #5f6f81;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .Commercialcapex-wrapper {
+    padding: 60px 20px;
+  }
+  
+  .Commercialcapex-header h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Commercialcapex-table-wrapper {
+    display: none;
+  }
+
+  .Commercialcapex-mobile {
+    display: block;
+  }
+  
+  .Commercialcapex-header {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Commercialcapex-header h2 {
+    font-size: 28px;
+  }
+  
+  .Commercialcapex-header p {
+    font-size: 15px;
+  }
+  
+  .Commercialcapex-badge {
+    font-size: 11px;
+    padding: 6px 16px;
+  }
+  
+  .Commercialcapex-card {
+    padding: 20px;
+  }
+  
+  .capex-box,
+  .opex-box {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Commercialcapex-wrapper {
+    padding: 50px 15px;
+  }
+
+  .Commercialcapex-header h2 {
+    font-size: 26px;
+  }
+
+  .Commercialcapex-header p {
+    font-size: 14px;
+  }
+  
+  .Commercialcapex-card h4 {
+    font-size: 17px;
+  }
+  
+  .capex-box,
+  .opex-box {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Commercialcapex-header h2 {
+    font-size: 24px;
+  }
+  
+  .Commercialcapex-card-content {
+    gap: 12px;
+  }
+  
+  .capex-box strong,
+  .opex-box strong {
+    font-size: 13px;
+  }
+}

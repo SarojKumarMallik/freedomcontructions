@@ -1,0 +1,306 @@
+/* ================= SECTION ================= */
+.Contactgetintouch-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Contactgetintouch-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Container */
+.Contactgetintouch-container {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= LEFT SIDE ================= */
+.Contactgetintouch-left {
+  flex: 1;
+}
+
+.Contactgetintouch-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFD700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.Contactgetintouch-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0A1A4A;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.Contactgetintouch-description {
+  font-size: 16px;
+  color: #5f6f81;
+  margin-bottom: 40px;
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+/* Info Cards */
+.Contactgetintouch-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.Contactgetintouch-info-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.Contactgetintouch-info-card:hover {
+  transform: translateY(-5px);
+  border-color: #FFD700;
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.12);
+}
+
+.Contactgetintouch-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+}
+
+.Contactgetintouch-info-card p {
+  font-size: 13px;
+  color: #5f6f81;
+  margin: 0;
+}
+
+.Contactgetintouch-info-card a,
+.Contactgetintouch-info-card span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0A1A4A;
+  text-decoration: none;
+}
+
+.Contactgetintouch-info-card a:hover {
+  color: #FFD700;
+}
+
+/* ================= RIGHT FORM ================= */
+.Contactgetintouch-right {
+  flex: 1;
+}
+
+.Contactgetintouch-form {
+  padding: 50px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 30px 60px rgba(10, 26, 74, 0.06);
+  transition: 0.3s ease;
+}
+
+.Contactgetintouch-form:hover {
+  box-shadow: 0 40px 70px rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.35);
+}
+
+.Contactgetintouch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.Contactgetintouch-form input,
+.Contactgetintouch-form textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Contactgetintouch-form input:focus,
+.Contactgetintouch-form textarea:focus {
+  outline: none;
+  border-color: #FFD700;
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
+}
+
+.Contactgetintouch-form textarea {
+  margin-bottom: 30px;
+  resize: none;
+}
+
+/* BUTTON */
+.Contactgetintouch-form button {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: #0A1A4A;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.25);
+}
+
+.Contactgetintouch-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.35);
+}
+
+/* SUCCESS & ERROR */
+.success-message {
+  margin-top: 15px;
+  color: #FFD700;
+  font-weight: 600;
+}
+
+.error-message,
+.error {
+  margin-top: 8px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .Contactgetintouch-section {
+    padding: 80px 20px;
+  }
+  
+  .Contactgetintouch-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .Contactgetintouch-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Contactgetintouch-section {
+    padding: 60px 20px;
+  }
+  
+  .Contactgetintouch-right {
+    width: 100%;
+  }
+  
+  .Contactgetintouch-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .Contactgetintouch-form {
+    padding: 35px;
+  }
+  
+  .Contactgetintouch-title {
+    font-size: 32px;
+  }
+  
+  .Contactgetintouch-subtitle {
+    font-size: 12px;
+    padding: 5px 14px;
+  }
+  
+  .Contactgetintouch-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Contactgetintouch-section {
+    padding: 50px 15px;
+  }
+  
+  .Contactgetintouch-title {
+    font-size: 28px;
+  }
+  
+  .Contactgetintouch-form {
+    padding: 25px;
+  }
+  
+  .Contactgetintouch-form button {
+    width: 100%;
+    padding: 14px 30px;
+  }
+  
+  .Contactgetintouch-info-card {
+    padding: 14px 16px;
+  }
+  
+  .Contactgetintouch-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  .Contactgetintouch-info-card a,
+  .Contactgetintouch-info-card span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Contactgetintouch-section {
+    padding: 40px 15px;
+  }
+
+  .Contactgetintouch-title {
+    font-size: 26px;
+  }
+  
+  .Contactgetintouch-description {
+    font-size: 14px;
+  }
+  
+  .Contactgetintouch-form input,
+  .Contactgetintouch-form textarea {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+}

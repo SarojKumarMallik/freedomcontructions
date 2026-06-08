@@ -1,0 +1,40 @@
+.Homeimageslider_section {
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.Homeimageslider_wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Homeimageslider_track {
+  display: flex;
+  will-change: transform;
+}
+
+.Homeimageslider_slide {
+  min-width: calc(100% / 3);
+  box-sizing: border-box;
+}
+
+.Homeimageslider_slide img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .Homeimageslider_slide {
+    min-width: calc(100% / 2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .Homeimageslider_slide {
+    min-width: 100%;
+  }
+}

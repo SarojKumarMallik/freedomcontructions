@@ -1,0 +1,222 @@
+/* ================= SECTION ================= */
+
+.Offgridsystemwhychoosebsp-section {
+  padding: 50px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.Offgridsystemwhychoosebsp-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+.Offgridsystemwhychoosebsp-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.Offgridsystemwhychoosebsp-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.Offgridsystemwhychoosebsp-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0A1A4A;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.Offgridsystemwhychoosebsp-header h2 span {
+  color: #FFD700;
+}
+
+.Offgridsystemwhychoosebsp-header p {
+  max-width: 750px;
+  margin: auto;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* ================= GRID (ALL IN ONE LINE) ================= */
+
+.Offgridsystemwhychoosebsp-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+/* ================= CARD ================= */
+
+.Offgridsystemwhychoosebsp-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.Offgridsystemwhychoosebsp-card:hover {
+  transform: translateY(-6px);
+  border-color: #FFD700;
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.12);
+}
+
+.Offgridsystemwhychoosebsp-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.Offgridsystemwhychoosebsp-card:hover .Offgridsystemwhychoosebsp-icon {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+}
+
+.Offgridsystemwhychoosebsp-card h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #0A1A4A;
+}
+
+.Offgridsystemwhychoosebsp-card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ================= CTA ================= */
+
+.Offgridsystemwhychoosebsp-ctaWrapper {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.Offgridsystemwhychoosebsp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+.Offgridsystemwhychoosebsp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.35);
+}
+
+.Offgridsystemwhychoosebsp-btnArrow {
+  transition: 0.3s;
+}
+
+.Offgridsystemwhychoosebsp-btn:hover .Offgridsystemwhychoosebsp-btnArrow {
+  transform: translateX(5px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Tablet */
+@media (max-width: 1200px) {
+  .Offgridsystemwhychoosebsp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .Offgridsystemwhychoosebsp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Offgridsystemwhychoosebsp-header h2 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .Offgridsystemwhychoosebsp-header h2 {
+    font-size: 28px;
+  }
+  
+  .Offgridsystemwhychoosebsp-header p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Offgridsystemwhychoosebsp-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Offgridsystemwhychoosebsp-header h2 {
+    font-size: 26px;
+  }
+  
+  .Offgridsystemwhychoosebsp-header {
+    margin-bottom: 50px;
+  }
+  
+  .Offgridsystemwhychoosebsp-card {
+    padding: 25px 18px;
+  }
+  
+  .Offgridsystemwhychoosebsp-badge {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+  
+  .Offgridsystemwhychoosebsp-ctaWrapper {
+    margin-top: 45px;
+  }
+  
+  .Offgridsystemwhychoosebsp-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Offgridsystemwhychoosebsp-header h2 {
+    font-size: 24px;
+  }
+  
+  .Offgridsystemwhychoosebsp-header p {
+    font-size: 14px;
+  }
+  
+  .Offgridsystemwhychoosebsp-card h3 {
+    font-size: 16px;
+  }
+  
+  .Offgridsystemwhychoosebsp-card p {
+    font-size: 13px;
+  }
+}

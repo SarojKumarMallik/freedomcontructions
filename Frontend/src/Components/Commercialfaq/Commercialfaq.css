@@ -1,0 +1,228 @@
+/* SECTION */
+
+.Commercialfaq-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0A1A4A, #071238);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Commercialfaq-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.Commercialfaq-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER */
+
+.Commercialfaq-header {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+
+.Commercialfaq-badge {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 30px;
+  background: rgba(255, 215, 0, 0.15);
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #FFD700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.Commercialfaq-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.Commercialfaq-header span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ACCORDION */
+
+.Commercialfaq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Commercialfaq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: 0.4s ease;
+}
+
+.Commercialfaq-item:hover {
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.Commercialfaq-item.active {
+  background: rgba(255, 215, 0, 0.08);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+.Commercialfaq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 25px;
+  cursor: pointer;
+}
+
+.Commercialfaq-question h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 90%;
+  transition: color 0.3s ease;
+}
+
+.Commercialfaq-question:hover h4 {
+  color: #FFD700;
+}
+
+.Commercialfaq-icon {
+  font-size: 14px;
+  color: #FFD700;
+  transition: transform 0.4s ease;
+}
+
+.Commercialfaq-icon.rotate {
+  transform: rotate(45deg);
+}
+
+/* ANSWER SMOOTH ANIMATION */
+
+.Commercialfaq-answer {
+  overflow: hidden;
+  transition: height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Commercialfaq-answer-inner {
+  padding: 0 25px 25px 25px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.Commercialfaq-item.active .Commercialfaq-answer-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Commercialfaq-answer p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .Commercialfaq-wrapper {
+    padding: 60px 20px;
+  }
+  
+  .Commercialfaq-header h2 {
+    font-size: 32px;
+  }
+  
+  .Commercialfaq-header {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Commercialfaq-header h2 {
+    font-size: 28px;
+  }
+  
+  .Commercialfaq-badge {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+  
+  .Commercialfaq-question {
+    padding: 18px 20px;
+  }
+  
+  .Commercialfaq-question h4 {
+    font-size: 15px;
+  }
+  
+  .Commercialfaq-answer-inner {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .Commercialfaq-answer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Commercialfaq-wrapper {
+    padding: 50px 15px;
+  }
+
+  .Commercialfaq-header h2 {
+    font-size: 24px;
+  }
+  
+  .Commercialfaq-header p {
+    font-size: 14px;
+  }
+
+  .Commercialfaq-question h4 {
+    font-size: 14px;
+  }
+  
+  .Commercialfaq-question {
+    padding: 16px 16px;
+  }
+  
+  .Commercialfaq-icon {
+    font-size: 12px;
+  }
+  
+  .Commercialfaq-answer-inner {
+    padding: 0 16px 18px 16px;
+  }
+  
+  .Commercialfaq-answer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Commercialfaq-header h2 {
+    font-size: 22px;
+  }
+  
+  .Commercialfaq-question h4 {
+    font-size: 13px;
+  }
+}

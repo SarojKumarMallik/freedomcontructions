@@ -1,0 +1,242 @@
+/* ================= SECTION ================= */
+.Howtoinstall-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.Howtoinstall-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.Howtoinstall-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.Howtoinstall-badge {
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.Howtoinstall-heading {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 800;
+  color: #0A1A4A;
+}
+
+.Howtoinstall-heading span {
+  background: linear-gradient(90deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Howtoinstall-subtext {
+  color: #5f6f81;
+  font-size: 16px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ================= TIMELINE ================= */
+.Howtoinstall-timeline {
+  position: relative;
+  margin-left: 30px;
+  border-left: 3px solid #FFD700;
+}
+
+.Howtoinstall-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* ICON CIRCLE */
+.Howtoinstall-icon {
+  position: absolute;
+  left: -32px;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border: 3px solid #FFD700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFD700;
+  font-size: 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+/* Hover animation */
+.Howtoinstall-step:hover .Howtoinstall-icon {
+  background: #FFD700;
+  color: #0A1A4A;
+  transform: scale(1.05);
+  border-color: #E6B800;
+}
+
+/* Step Number */
+.Howtoinstall-step-number {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #FFD700;
+  color: #0A1A4A;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* CONTENT */
+.Howtoinstall-content {
+  margin-left: 70px;
+  padding-left: 30px;
+}
+
+.Howtoinstall-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0A1A4A;
+  font-weight: 700;
+}
+
+.Howtoinstall-content p {
+  color: #5f6f81;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .Howtoinstall-heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Howtoinstall-section {
+    padding: 60px 16px;
+  }
+  
+  .Howtoinstall-heading {
+    font-size: 28px;
+  }
+
+  .Howtoinstall-header {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  
+  .Howtoinstall-header .Howtoinstall-badge {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .Howtoinstall-timeline {
+    margin-left: 20px;
+  }
+
+  .Howtoinstall-icon {
+    width: 55px;
+    height: 55px;
+    left: -27px;
+    font-size: 18px;
+  }
+
+  .Howtoinstall-content {
+    margin-left: 55px;
+    padding-left: 20px;
+  }
+  
+  .Howtoinstall-content h3 {
+    font-size: 18px;
+  }
+  
+  .Howtoinstall-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Howtoinstall-heading {
+    font-size: 24px;
+  }
+  
+  .Howtoinstall-subtext {
+    font-size: 14px;
+  }
+  
+  .Howtoinstall-icon {
+    width: 48px;
+    height: 48px;
+    left: -24px;
+    font-size: 16px;
+  }
+  
+  .Howtoinstall-content {
+    margin-left: 48px;
+    padding-left: 15px;
+  }
+  
+  .Howtoinstall-step-number {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    top: -6px;
+    right: -6px;
+  }
+  
+  .Howtoinstall-content h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Howtoinstall-heading {
+    font-size: 22px;
+  }
+
+  .Howtoinstall-content h3 {
+    font-size: 16px;
+  }
+
+  .Howtoinstall-content p {
+    font-size: 13px;
+  }
+  
+  .Howtoinstall-step {
+    margin-bottom: 45px;
+  }
+  
+  .Howtoinstall-icon {
+    width: 42px;
+    height: 42px;
+    left: -21px;
+    font-size: 14px;
+    border-width: 2px;
+  }
+  
+  .Howtoinstall-content {
+    margin-left: 42px;
+    padding-left: 12px;
+  }
+}

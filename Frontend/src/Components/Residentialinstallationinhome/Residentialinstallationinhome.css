@@ -1,0 +1,248 @@
+/* WRAPPER */
+.Residentialinstallationinhome-wrapper {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0A1A4A, #071238);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Residentialinstallationinhome-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* CONTAINER */
+.Residentialinstallationinhome-container {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+/* SIDEBAR */
+.Residentialinstallationinhome-sidebar {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.Residentialinstallationinhome-sidebar-title {
+  color: #FFD700;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.Residentialinstallationinhome-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Residentialinstallationinhome-sidebar-item {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0A1A4A;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.Residentialinstallationinhome-sidebar-item:hover {
+  transform: translateX(6px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.Residentialinstallationinhome-sidebar-item-active {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A !important;
+  border: none;
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+}
+
+.Residentialinstallationinhome-sidebar-icon {
+  font-size: 18px;
+  color: #FFD700;
+}
+
+.Residentialinstallationinhome-sidebar-item-active .Residentialinstallationinhome-sidebar-icon {
+  color: #0A1A4A;
+}
+
+.Residentialinstallationinhome-sidebar-name {
+  flex: 1;
+}
+
+/* CONTENT */
+.Residentialinstallationinhome-content {
+  color: #ffffff;
+}
+
+.Residentialinstallationinhome-heading {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.Residentialinstallationinhome-heading span {
+  color: #FFD700;
+}
+
+.Residentialinstallationinhome-description {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* BENEFITS */
+.Residentialinstallationinhome-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.Residentialinstallationinhome-benefit-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.Residentialinstallationinhome-benefit-icon {
+  color: #FFD700;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.Residentialinstallationinhome-benefit-item strong {
+  color: #FFD700;
+}
+
+.Residentialinstallationinhome-benefit-item p {
+  margin-top: 5px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* CTA */
+.Residentialinstallationinhome-cta-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 35px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  border-radius: 50px;
+  color: #0A1A4A;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 15px 30px rgba(255, 215, 0, 0.25);
+}
+
+.Residentialinstallationinhome-cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(255, 215, 0, 0.35);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .Residentialinstallationinhome-container {
+    gap: 50px;
+  }
+  
+  .Residentialinstallationinhome-heading {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Residentialinstallationinhome-wrapper {
+    padding: 80px 20px;
+  }
+  
+  .Residentialinstallationinhome-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Residentialinstallationinhome-sidebar {
+    display: none;
+  }
+
+  .Residentialinstallationinhome-heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Residentialinstallationinhome-wrapper {
+    padding: 60px 18px;
+  }
+
+  .Residentialinstallationinhome-heading {
+    font-size: 28px;
+  }
+
+  .Residentialinstallationinhome-description {
+    font-size: 15px;
+  }
+  
+  .Residentialinstallationinhome-benefit-item p {
+    font-size: 14px;
+  }
+  
+  .Residentialinstallationinhome-cta-button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Residentialinstallationinhome-wrapper {
+    padding: 50px 16px;
+  }
+  
+  .Residentialinstallationinhome-heading {
+    font-size: 24px;
+  }
+  
+  .Residentialinstallationinhome-description {
+    font-size: 14px;
+  }
+  
+  .Residentialinstallationinhome-benefit-item {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  
+  .Residentialinstallationinhome-benefit-icon {
+    font-size: 18px;
+  }
+  
+  .Residentialinstallationinhome-benefit-item p {
+    font-size: 13px;
+  }
+  
+  .Residentialinstallationinhome-cta-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}

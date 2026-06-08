@@ -1,0 +1,260 @@
+/* ================= SECTION ================= */
+
+.bsp-install-section {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #f4f8fb 0%, #ffffff 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.bsp-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+.bsp-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.bsp-badge {
+  display: inline-block;
+  padding: 8px 22px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.bsp-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0A1A4A;
+  margin-bottom: 15px;
+}
+
+.bsp-header h2 span {
+  color: #FFD700;
+}
+
+.bsp-header p {
+  color: #6b7280;
+  font-size: 16px;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* ================= TIMELINE ================= */
+
+.bsp-timeline {
+  position: relative;
+}
+
+.bsp-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.bsp-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bsp-circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.bsp-step:hover .bsp-circle {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+}
+
+.bsp-line {
+  width: 4px;
+  flex: 1;
+  background: linear-gradient(180deg, #FFD700, #d1d5db);
+  margin-top: 12px;
+}
+
+/* ================= CARD ================= */
+
+.bsp-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #FFD700;
+  transition: 0.3s ease;
+}
+
+.bsp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(255, 215, 0, 0.12);
+}
+
+.bsp-card h3 {
+  font-size: 20px;
+  color: #0A1A4A;
+  margin-bottom: 12px;
+}
+
+.bsp-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+/* ================= CTA ================= */
+
+.bsp-cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.bsp-btn {
+  display: inline-block;
+  padding: 15px 45px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.35);
+}
+
+.bsp-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(255, 215, 0, 0.45);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Screens */
+@media (min-width: 1400px) {
+  .bsp-container {
+    max-width: 1300px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .bsp-header h2 {
+    font-size: 32px;
+  }
+
+  .bsp-step {
+    gap: 25px;
+  }
+
+  .bsp-card {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .bsp-install-section {
+    padding: 70px 15px;
+  }
+
+  .bsp-step {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bsp-left {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .bsp-line {
+    display: none;
+  }
+
+  .bsp-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .bsp-card {
+    padding: 22px;
+  }
+
+  .bsp-header h2 {
+    font-size: 28px;
+  }
+
+  .bsp-header p {
+    font-size: 14px;
+  }
+  
+  .bsp-badge {
+    font-size: 11px;
+    padding: 6px 18px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .bsp-header h2 {
+    font-size: 24px;
+  }
+  
+  .bsp-card h3 {
+    font-size: 17px;
+  }
+
+  .bsp-card p {
+    font-size: 14px;
+  }
+
+  .bsp-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bsp-header h2 {
+    font-size: 22px;
+  }
+  
+  .bsp-install-section {
+    padding: 60px 12px;
+  }
+  
+  .bsp-card {
+    padding: 18px;
+  }
+  
+  .bsp-card h3 {
+    font-size: 16px;
+  }
+  
+  .bsp-card p {
+    font-size: 13px;
+  }
+} 

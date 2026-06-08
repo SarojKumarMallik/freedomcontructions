@@ -1,0 +1,154 @@
+:root {
+  --primary: #0f3d5e;
+  --accent: #2e7fbf;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+  --border: #e6edf3;
+}
+
+/* Section */
+.Careerwelcome-section {
+  padding: 50px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.Careerwelcome-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Header */
+.Careerwelcome-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.Careerwelcome-label {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.Careerwelcome-heading {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.Careerwelcome-heading span {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Careerwelcome-description {
+  color: var(--text-light);
+}
+
+/* Job Card */
+.Careerwelcome-jobcard {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.Careerwelcome-jobcard.active {
+  box-shadow: 0 20px 50px rgba(15, 61, 94, 0.08);
+  border-color: var(--accent);
+}
+
+.Careerwelcome-jobheader {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+.Careerwelcome-jobheader h3 {
+  margin-bottom: 10px;
+}
+
+.Careerwelcome-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.Careerwelcome-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Job Content */
+.Careerwelcome-jobcontent {
+  padding: 30px;
+  background: #f9fbfd;
+  border-top: 1px solid var(--border);
+}
+
+.Careerwelcome-sectionblock {
+  margin-bottom: 25px;
+}
+
+.Careerwelcome-sectionblock h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.Careerwelcome-sectionblock p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.Careerwelcome-sectionblock ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Careerwelcome-sectionblock li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.Careerwelcome-sectionblock li svg {
+  color: var(--accent);
+  margin-top: 3px;
+}
+
+/* Apply Button */
+.Careerwelcome-applybtn {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Careerwelcome-applybtn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Careerwelcome-heading {
+    font-size: 28px;
+  }
+
+  .Careerwelcome-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

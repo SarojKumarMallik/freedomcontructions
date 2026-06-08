@@ -1,0 +1,292 @@
+/* ================= PREMIUM BACKGROUND ================= */
+
+.Solaramcservice-wrapper {
+  padding: 100px 20px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.1), transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(255, 215, 0, 0.08), transparent 45%),
+    linear-gradient(135deg, #0A1A4A 0%, #071238 100%);
+}
+
+/* subtle glow animation - updated to gold */
+.Solaramcservice-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.12), transparent 70%);
+  top: -150px;
+  right: -150px;
+  animation: glowMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+  from { transform: translateY(0px); }
+  to { transform: translateY(40px); }
+}
+
+.Solaramcservice-container {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= LEFT GLASS PANEL ================= */
+
+.Solaramcservice-left {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  padding: 45px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.Solaramcservice-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 35px;
+  color: #FFD700;
+}
+
+/* Services */
+
+.Solaramcservice-services {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.Solaramcservice-service {
+  display: flex;
+  align-items: center;
+  padding: 16px 22px;
+  border-radius: 16px;
+  background: #ffffff;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  font-weight: 600;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.Solaramcservice-service:hover {
+  transform: translateX(8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.Solaramcservice-active {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A !important;
+  box-shadow: 0 20px 50px rgba(255, 215, 0, 0.35);
+}
+
+.Solaramcservice-icon {
+  font-size: 18px;
+  color: #FFD700;
+}
+
+.Solaramcservice-active .Solaramcservice-icon {
+  color: #0A1A4A;
+}
+
+.Solaramcservice-name {
+  flex: 1;
+  margin-left: 14px;
+  font-size: 15px;
+  color: #0A1A4A;
+}
+
+.Solaramcservice-active .Solaramcservice-name {
+  color: #0A1A4A;
+}
+
+/* ================= RIGHT CONTENT ================= */
+
+.Solaramcservice-right {
+  color: #ffffff;
+}
+
+.Solaramcservice-main-title {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.Solaramcservice-subtitle {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 50px 0 20px;
+  color: #FFD700;
+}
+
+.Solaramcservice-text {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 800px;
+}
+
+/* ================= LIST ================= */
+
+.Solaramcservice-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+  max-width: 850px;
+}
+
+.Solaramcservice-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.Solaramcservice-check {
+  color: #FFD700;
+  margin-top: 5px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ================= CTA ================= */
+
+.Solaramcservice-cta {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 16px 42px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-weight: 800;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+  box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3);
+}
+
+.Solaramcservice-cta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(255, 215, 0, 0.45);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .Solaramcservice-container {
+    gap: 60px;
+  }
+  
+  .Solaramcservice-main-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Solaramcservice-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Solaramcservice-left {
+    display: none;
+  }
+
+  .Solaramcservice-main-title {
+    font-size: 34px;
+  }
+
+  .Solaramcservice-subtitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Solaramcservice-wrapper {
+    padding: 70px 18px;
+  }
+
+  .Solaramcservice-main-title {
+    font-size: 28px;
+  }
+
+  .Solaramcservice-subtitle {
+    font-size: 22px;
+    margin: 35px 0 15px;
+  }
+
+  .Solaramcservice-text {
+    font-size: 15px;
+  }
+
+  .Solaramcservice-list li {
+    font-size: 15px;
+  }
+
+  .Solaramcservice-cta {
+    width: 100%;
+    text-align: center;
+    padding: 14px 32px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Solaramcservice-wrapper {
+    padding: 60px 15px;
+  }
+
+  .Solaramcservice-main-title {
+    font-size: 26px;
+  }
+
+  .Solaramcservice-subtitle {
+    font-size: 20px;
+  }
+
+  .Solaramcservice-text {
+    font-size: 14px;
+  }
+
+  .Solaramcservice-list li {
+    font-size: 14px;
+  }
+  
+  .Solaramcservice-check {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Solaramcservice-wrapper {
+    padding: 50px 15px;
+  }
+
+  .Solaramcservice-main-title {
+    font-size: 24px;
+  }
+
+  .Solaramcservice-subtitle {
+    font-size: 18px;
+  }
+
+  .Solaramcservice-text {
+    font-size: 13px;
+  }
+
+  .Solaramcservice-list li {
+    font-size: 13px;
+  }
+}

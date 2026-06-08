@@ -1,0 +1,241 @@
+/* ================= SECTION ================= */
+
+.Commercialsolarsystem-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0A1A4A, #071238, #0A1A4A);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.Commercialsolarsystem-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.15), transparent 70%);
+  border-radius: 50%;
+}
+
+/* ================= CONTAINER ================= */
+
+.Commercialsolarsystem-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= HEADER ================= */
+
+.Commercialsolarsystem-header {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+
+.Commercialsolarsystem-badge {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background: rgba(255, 215, 0, 0.15);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  color: #FFD700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.Commercialsolarsystem-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.Commercialsolarsystem-header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Commercialsolarsystem-header p {
+  max-width: 680px;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= TABLE ================= */
+
+.Commercialsolarsystem-table-wrapper {
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+.Commercialsolarsystem-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  color: #ffffff;
+}
+
+.Commercialsolarsystem-table thead {
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.Commercialsolarsystem-table th {
+  padding: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  color: #FFD700;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.Commercialsolarsystem-table td {
+  padding: 20px 22px;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  transition: 0.3s ease;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.Commercialsolarsystem-table tbody tr:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.Commercialsolarsystem-table tbody tr:hover td {
+  color: #ffffff;
+}
+
+.Commercialsolarsystem-component {
+  font-weight: 600;
+  color: #FFD700;
+}
+
+/* ================= ICONS ================= */
+
+.Commercialsolarsystem-icon-cell {
+  text-align: center;
+}
+
+.Commercialsolarsystem-check {
+  color: #FFD700;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.Commercialsolarsystem-cross {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 22px;
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.Commercialsolarsystem-table tbody tr:hover 
+.Commercialsolarsystem-check {
+  transform: scale(1.2);
+  color: #FFD700;
+}
+
+.Commercialsolarsystem-table tbody tr:hover 
+.Commercialsolarsystem-cross {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ================= NOTE ================= */
+
+.Commercialsolarsystem-note {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .Commercialsolarsystem-wrapper {
+    padding: 60px 20px;
+  }
+  
+  .Commercialsolarsystem-header h2 {
+    font-size: 34px;
+  }
+  
+  .Commercialsolarsystem-header {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Commercialsolarsystem-wrapper {
+    padding: 50px 15px;
+  }
+
+  .Commercialsolarsystem-header h2 {
+    font-size: 28px;
+  }
+
+  .Commercialsolarsystem-header p {
+    font-size: 14px;
+  }
+  
+  .Commercialsolarsystem-badge {
+    font-size: 11px;
+    padding: 5px 16px;
+  }
+
+  .Commercialsolarsystem-table {
+    min-width: 550px;
+  }
+  
+  .Commercialsolarsystem-table th,
+  .Commercialsolarsystem-table td {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+  
+  .Commercialsolarsystem-check,
+  .Commercialsolarsystem-cross {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Commercialsolarsystem-header h2 {
+    font-size: 24px;
+  }
+  
+  .Commercialsolarsystem-table th,
+  .Commercialsolarsystem-table td {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+  
+  .Commercialsolarsystem-check,
+  .Commercialsolarsystem-cross {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Commercialsolarsystem-header h2 {
+    font-size: 22px;
+  }
+  
+  .Commercialsolarsystem-table th,
+  .Commercialsolarsystem-table td {
+    padding: 10px 10px;
+    font-size: 11px;
+  }
+}

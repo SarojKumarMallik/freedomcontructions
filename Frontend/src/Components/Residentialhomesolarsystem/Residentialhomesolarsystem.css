@@ -1,0 +1,239 @@
+/* SECTION */
+.Residentialhome-section-wrapper {
+  padding: 50px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Residentialhome-section-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.Residentialhome-container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER (Same Style as Previous Sections) */
+.Residentialhome-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.Residentialhome-label {
+  color: #FFD700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.1);
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.Residentialhome-heading {
+  font-size: 40px;
+  margin: 15px 0;
+  color: #0A1A4A;
+}
+
+.Residentialhome-heading span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Residentialhome-description {
+  color: #5f6f81;
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* BLOCK */
+.Residentialhome-block {
+  margin-bottom: 90px;
+}
+
+.Residentialhome-block h3 {
+  font-size: 26px;
+  color: #0A1A4A;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 12px;
+}
+
+.Residentialhome-block h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #FFD700, #E6B800);
+  border-radius: 3px;
+}
+
+/* GRID */
+.Residentialhome-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.Residentialhome-card {
+  background: #ffffff;
+  border: 1px solid #e6edf3;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(10, 26, 74, 0.06);
+  transition: 0.35s ease;
+}
+
+.Residentialhome-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.2);
+}
+
+.Residentialhome-card h4 {
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.Residentialhome-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Residentialhome-card li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #0A1A4A;
+}
+
+.Residentialhome-card li strong {
+  color: #0A1A4A;
+}
+
+/* HYBRID TEXT */
+.Residentialhome-hybrid-text {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  color: #5f6f81;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .Residentialhome-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .Residentialhome-heading {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Residentialhome-section-wrapper {
+    padding: 60px 20px;
+  }
+  
+  .Residentialhome-header {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Residentialhome-section-wrapper {
+    padding: 50px 16px;
+  }
+  
+  .Residentialhome-heading {
+    font-size: 30px;
+  }
+
+  .Residentialhome-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .Residentialhome-block {
+    margin-bottom: 60px;
+  }
+  
+  .Residentialhome-block h3 {
+    font-size: 22px;
+  }
+  
+  .Residentialhome-label {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+  
+  .Residentialhome-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Residentialhome-heading {
+    font-size: 26px;
+  }
+  
+  .Residentialhome-card {
+    padding: 20px;
+  }
+  
+  .Residentialhome-card h4 {
+    font-size: 17px;
+  }
+  
+  .Residentialhome-card li {
+    font-size: 13px;
+  }
+  
+  .Residentialhome-hybrid-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Residentialhome-heading {
+    font-size: 24px;
+  }
+  
+  .Residentialhome-block h3 {
+    font-size: 20px;
+  }
+  
+  .Residentialhome-block h3::after {
+    width: 40px;
+    height: 2px;
+  }
+}

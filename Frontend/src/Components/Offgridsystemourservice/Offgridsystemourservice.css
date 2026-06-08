@@ -1,0 +1,300 @@
+/* ================= PREMIUM BACKGROUND ================= */
+
+.Offgridsystemourservice-wrapper {
+  padding: 80px 20px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 25%, rgba(255, 215, 0, 0.12), transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(255, 215, 0, 0.08), transparent 40%),
+    linear-gradient(135deg, #0A1A4A 0%, #071238 50%, #0A1A4A 100%);
+}
+
+/* Subtle animated glow - updated to gold */
+.Offgridsystemourservice-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.15), transparent 70%);
+  top: -200px;
+  right: -200px;
+  animation: floatGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow {
+  from { transform: translateY(0px); }
+  to { transform: translateY(40px); }
+}
+
+.Offgridsystemourservice-container {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= LEFT GLASS PANEL ================= */
+
+.Offgridsystemourservice-left {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  padding: 45px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+}
+
+.Offgridsystemourservice-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+  display: inline-block;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.Offgridsystemourservice-title {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #FFD700;
+  line-height: 1.3;
+}
+
+/* SERVICES */
+
+.Offgridsystemourservice-services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Offgridsystemourservice-service {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  border-radius: 18px;
+  background: #ffffff;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  border: 2px solid transparent;
+}
+
+.Offgridsystemourservice-service:hover {
+  transform: translateX(12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border-color: #FFD700;
+}
+
+.Offgridsystemourservice-active {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A !important;
+  box-shadow: 0 25px 60px rgba(255, 215, 0, 0.35);
+}
+
+.Offgridsystemourservice-icon {
+  font-size: 22px;
+  color: #FFD700;
+}
+
+.Offgridsystemourservice-active .Offgridsystemourservice-icon {
+  color: #0A1A4A;
+}
+
+.Offgridsystemourservice-name {
+  flex: 1;
+  margin-left: 16px;
+  font-weight: 700;
+  color: #0A1A4A;
+}
+
+.Offgridsystemourservice-active .Offgridsystemourservice-name {
+  color: #0A1A4A;
+}
+
+.Offgridsystemourservice-arrow {
+  font-weight: 700;
+  opacity: 0.6;
+  color: #FFD700;
+}
+
+.Offgridsystemourservice-active .Offgridsystemourservice-arrow {
+  color: #0A1A4A;
+}
+
+/* ================= RIGHT CONTENT ================= */
+
+.Offgridsystemourservice-main-title {
+  font-size: 46px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.Offgridsystemourservice-main-title span {
+  color: #FFD700;
+}
+
+.Offgridsystemourservice-intro {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ================= PREMIUM TABLE ================= */
+
+.Offgridsystemourservice-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.Offgridsystemourservice-table-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 35px 80px rgba(255, 215, 0, 0.15);
+}
+
+.Offgridsystemourservice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Offgridsystemourservice-table th {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  padding: 20px;
+  text-align: left;
+  font-weight: 800;
+  color: #0A1A4A;
+  font-size: 15px;
+}
+
+.Offgridsystemourservice-table td {
+  padding: 18px 20px;
+  border-top: 1px solid rgba(255, 215, 0, 0.15);
+  color: #0A1A4A;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Offgridsystemourservice-table tr:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+/* ================= CTA BUTTON ================= */
+
+.Offgridsystemourservice-cta {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 16px 38px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-weight: 800;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 25px 60px rgba(255, 215, 0, 0.35);
+  transition: all 0.35s ease;
+}
+
+.Offgridsystemourservice-cta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 80px rgba(255, 215, 0, 0.45);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .Offgridsystemourservice-container {
+    gap: 60px;
+  }
+  
+  .Offgridsystemourservice-main-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Offgridsystemourservice-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Offgridsystemourservice-left {
+    display: none;
+  }
+
+  .Offgridsystemourservice-main-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Offgridsystemourservice-wrapper {
+    padding: 60px 16px;
+  }
+  
+  .Offgridsystemourservice-main-title {
+    font-size: 28px;
+  }
+
+  .Offgridsystemourservice-intro {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  
+  .Offgridsystemourservice-table th,
+  .Offgridsystemourservice-table td {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Offgridsystemourservice-wrapper {
+    padding: 50px 15px;
+  }
+
+  .Offgridsystemourservice-main-title {
+    font-size: 24px;
+  }
+  
+  .Offgridsystemourservice-intro {
+    font-size: 14px;
+  }
+
+  .Offgridsystemourservice-table th,
+  .Offgridsystemourservice-table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .Offgridsystemourservice-cta {
+    width: 100%;
+    text-align: center;
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Offgridsystemourservice-main-title {
+    font-size: 22px;
+  }
+  
+  .Offgridsystemourservice-table th,
+  .Offgridsystemourservice-table td {
+    font-size: 11px;
+    padding: 8px;
+  }
+}

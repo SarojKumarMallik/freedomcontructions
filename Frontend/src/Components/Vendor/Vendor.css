@@ -1,0 +1,250 @@
+/* ================= VENDOR SECTION ================= */
+
+.vendor {
+  padding: 70px 0;
+  background: #0A1A4A; /* Navy Primary Color */
+}
+
+/* Container */
+.vendor_container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ================= HEADER ================= */
+
+.vendor_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.vendor_title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ffffff; /* White Text */
+}
+
+.vendor_subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ================= GRID ================= */
+
+.vendor_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* ================= BLOCK ================= */
+
+.vendor_block {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.vendor_block:hover {
+  background: rgba(255, 215, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+/* ================= BLOCK HEADER ================= */
+
+.block_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.block_icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFD700;
+  color: #0A1A4A;
+}
+
+.block_icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Title */
+.block_title_content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 4px;
+}
+
+.block_title_content p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================= CARDS ================= */
+
+.vendor_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.vendor_cards_demo{
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Card */
+.vendor_card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  padding: 14px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.vendor_card:hover {
+  background: rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+/* ================= FINANCE CARD ================= */
+
+.finance_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.card_logo {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border-radius: 8px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.finance_card span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ================= VENDOR TEXT CARD ================= */
+
+.vendor_card_text {
+  padding: 16px;
+}
+
+.vendor_acronym {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 4px;
+}
+
+.vendor_full_name {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================= STATS ================= */
+
+.vendor_stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 35px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.stat_item {
+  text-align: center;
+}
+
+.stat_number {
+  font-size: 34px;
+  font-weight: 800;
+  color: #FFD700;
+  margin-bottom: 6px;
+}
+
+.stat_label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .vendor_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .vendor_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vendor_stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .vendor_title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vendor_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .block_header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat_number {
+    font-size: 28px;
+  }
+  
+  .vendor {
+    padding: 50px 0;
+  }
+  
+  .vendor_header {
+    margin-bottom: 40px;
+  }
+}

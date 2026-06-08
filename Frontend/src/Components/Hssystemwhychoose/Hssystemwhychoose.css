@@ -1,0 +1,245 @@
+/* SECTION */
+.Hssystemwhychoose-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f8fbff 0%, #f3f8fc 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.Hssystemwhychoose-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* HEADER */
+.Hssystemwhychoose-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.Hssystemwhychoose-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.Hssystemwhychoose-header h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #0A1A4A;
+}
+
+.Hssystemwhychoose-header span {
+  background: linear-gradient(90deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Hssystemwhychoose-header p {
+  color: #5f6f81;
+  max-width: 750px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* GRID */
+.Hssystemwhychoose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/* CARD */
+.Hssystemwhychoose-card {
+  display: flex;
+  gap: 20px;
+  padding: 35px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  transition: 0.4s ease;
+  position: relative;
+}
+
+.Hssystemwhychoose-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* ICON */
+.Hssystemwhychoose-icon {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.Hssystemwhychoose-card:hover .Hssystemwhychoose-icon {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+
+/* CONTENT */
+.Hssystemwhychoose-content h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #0A1A4A;
+}
+
+.Hssystemwhychoose-content p {
+  font-size: 15px;
+  color: #5f6f81;
+  line-height: 1.7;
+}
+
+/* CTA */
+.Hssystemwhychoose-cta {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.Hssystemwhychoose-cta a {
+  padding: 16px 50px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.Hssystemwhychoose-cta a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(255, 215, 0, 0.4);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .Hssystemwhychoose-container {
+    max-width: 1400px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .Hssystemwhychoose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Hssystemwhychoose-header h2 {
+    font-size: 34px;
+  }
+
+  .Hssystemwhychoose-card {
+    padding: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .Hssystemwhychoose-wrapper {
+    padding: 60px 20px;
+  }
+
+  .Hssystemwhychoose-header h2 {
+    font-size: 28px;
+  }
+  
+  .Hssystemwhychoose-header {
+    margin-bottom: 50px;
+  }
+
+  .Hssystemwhychoose-header p {
+    font-size: 14px;
+  }
+
+  .Hssystemwhychoose-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px;
+  }
+
+  .Hssystemwhychoose-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  .Hssystemwhychoose-content h4 {
+    font-size: 17px;
+  }
+
+  .Hssystemwhychoose-content p {
+    font-size: 14px;
+  }
+
+  .Hssystemwhychoose-cta {
+    margin-top: 60px;
+  }
+  
+  .Hssystemwhychoose-cta a {
+    padding: 14px 35px;
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .Hssystemwhychoose-wrapper {
+    padding: 50px 16px;
+  }
+  
+  .Hssystemwhychoose-header h2 {
+    font-size: 24px;
+  }
+  
+  .Hssystemwhychoose-badge {
+    font-size: 11px;
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hssystemwhychoose-header h2 {
+    font-size: 22px;
+  }
+
+  .Hssystemwhychoose-card {
+    padding: 18px;
+  }
+
+  .Hssystemwhychoose-content p {
+    font-size: 13px;
+  }
+  
+  .Hssystemwhychoose-cta {
+    margin-top: 50px;
+  }
+  
+  .Hssystemwhychoose-cta a {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,236 @@
+/* ================= WRAPPER ================= */
+
+.Ourserviceswhy-wrapper {
+  padding: 80px 20px;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0A1A4A 0%, #071238 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow effect - updated to gold */
+.Ourserviceswhy-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent 70%);
+  top: -200px;
+  right: -200px;
+}
+
+.Ourserviceswhy-container {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 100px;
+}
+
+/* ================= LEFT PANEL ================= */
+
+.Ourserviceswhy-left {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.Ourserviceswhy-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+
+.Ourserviceswhy-services {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.Ourserviceswhy-service {
+  display: flex;
+  align-items: center;
+  padding: 16px 22px;
+  border-radius: 16px;
+  background: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.Ourserviceswhy-service:hover {
+  transform: translateX(10px);
+  border-color: #FFD700;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.15);
+}
+
+.Ourserviceswhy-active {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A !important;
+}
+
+.Ourserviceswhy-icon {
+  font-size: 20px;
+  color: #FFD700;
+}
+
+.Ourserviceswhy-active .Ourserviceswhy-icon {
+  color: #0A1A4A;
+}
+
+.Ourserviceswhy-name {
+  flex: 1;
+  margin-left: 15px;
+  font-weight: 700;
+  color: #0A1A4A;
+}
+
+.Ourserviceswhy-active .Ourserviceswhy-name {
+  color: #0A1A4A;
+}
+
+.Ourserviceswhy-arrow {
+  opacity: 0.6;
+  color: #FFD700;
+}
+
+.Ourserviceswhy-active .Ourserviceswhy-arrow {
+  color: #0A1A4A;
+}
+
+/* ================= RIGHT CONTENT ================= */
+
+.Ourserviceswhy-main-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.Ourserviceswhy-main-title span {
+  color: #FFD700;
+}
+
+.Ourserviceswhy-intro {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.Ourserviceswhy-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Ourserviceswhy-reason {
+  display: flex;
+  gap: 15px;
+}
+
+.Ourserviceswhy-check {
+  color: #FFD700;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.Ourserviceswhy-reason h4 {
+  color: #FFD700;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.Ourserviceswhy-reason p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .Ourserviceswhy-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .Ourserviceswhy-wrapper {
+    padding: 60px 20px;
+  }
+
+  .Ourserviceswhy-main-title {
+    font-size: 30px;
+  }
+  
+  .Ourserviceswhy-left {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Ourserviceswhy-main-title {
+    font-size: 28px;
+  }
+  
+  .Ourserviceswhy-intro {
+    font-size: 16px;
+  }
+  
+  .Ourserviceswhy-reason h4 {
+    font-size: 17px;
+  }
+  
+  .Ourserviceswhy-reason p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Ourserviceswhy-wrapper {
+    padding: 50px 16px;
+  }
+  
+  .Ourserviceswhy-main-title {
+    font-size: 24px;
+  }
+  
+  .Ourserviceswhy-intro {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .Ourserviceswhy-left {
+    display: none;
+  }
+  
+  .Ourserviceswhy-title {
+    font-size: 24px;
+  }
+  
+  .Ourserviceswhy-service {
+    padding: 12px 18px;
+  }
+  
+  .Ourserviceswhy-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Ourserviceswhy-main-title {
+    font-size: 22px;
+  }
+  
+  .Ourserviceswhy-reason {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .Ourserviceswhy-check {
+    margin-top: 0;
+  }
+}

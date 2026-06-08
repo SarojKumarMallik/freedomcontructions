@@ -1,0 +1,283 @@
+/* ================= WRAPPER ================= */
+
+.Bookcommercialsolar-wrapper {
+  padding: 50px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Subtle gold glow effect */
+.Bookcommercialsolar-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04), transparent 70%);
+  top: -200px;
+  left: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.Bookcommercialsolar-container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= PREMIUM HEADING ================= */
+
+.Bookcommercialsolar-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.Bookcommercialsolar-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FFD700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.Bookcommercialsolar-title {
+  font-size: 44px;
+  font-weight: 900;
+  color: #0A1A4A;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.Bookcommercialsolar-title span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Bookcommercialsolar-subtitle {
+  font-size: 18px;
+  color: #5f6f81;
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ================= TIMELINE ================= */
+
+.Bookcommercialsolar-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Connector Line - Updated to Gold */
+.Bookcommercialsolar-connector {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #FFD700,
+    #E6B800,
+    transparent
+  );
+  z-index: 0;
+}
+
+/* ================= STEP ================= */
+
+.Bookcommercialsolar-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+  transition: 0.4s ease;
+}
+
+.Bookcommercialsolar-step:hover {
+  transform: translateY(-8px);
+}
+
+/* Circle - Updated to Gold */
+.Bookcommercialsolar-circle {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #FFD700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #0A1A4A;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.1);
+}
+
+.Bookcommercialsolar-step:hover .Bookcommercialsolar-circle {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  border-color: #E6B800;
+  box-shadow: 0 15px 30px rgba(255, 215, 0, 0.25);
+  transform: scale(1.05);
+}
+
+/* Number - Updated to Gold */
+.Bookcommercialsolar-number {
+  position: absolute;
+  top: -10px;
+  right: 30%;
+  background: #FFD700;
+  color: #0A1A4A;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+/* Content */
+.Bookcommercialsolar-step h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0A1A4A;
+  margin-bottom: 15px;
+}
+
+.Bookcommercialsolar-step p {
+  font-size: 15px;
+  color: #5f6f81;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .Bookcommercialsolar-wrapper {
+    padding: 60px 20px;
+  }
+  
+  .Bookcommercialsolar-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .Bookcommercialsolar-connector {
+    display: none;
+  }
+  
+  .Bookcommercialsolar-title {
+    font-size: 36px;
+  }
+  
+  .Bookcommercialsolar-circle {
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Bookcommercialsolar-header {
+    margin-bottom: 60px;
+  }
+  
+  .Bookcommercialsolar-title {
+    font-size: 30px;
+  }
+  
+  .Bookcommercialsolar-subtitle {
+    font-size: 16px;
+  }
+  
+  .Bookcommercialsolar-step h3 {
+    font-size: 18px;
+  }
+  
+  .Bookcommercialsolar-step p {
+    font-size: 14px;
+  }
+  
+  .Bookcommercialsolar-label {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Bookcommercialsolar-wrapper {
+    padding: 50px 16px;
+  }
+  
+  .Bookcommercialsolar-timeline {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .Bookcommercialsolar-header {
+    margin-bottom: 50px;
+  }
+
+  .Bookcommercialsolar-title {
+    font-size: 26px;
+  }
+
+  .Bookcommercialsolar-subtitle {
+    font-size: 15px;
+  }
+  
+  .Bookcommercialsolar-step {
+    padding: 0;
+  }
+  
+  .Bookcommercialsolar-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Bookcommercialsolar-title {
+    font-size: 24px;
+  }
+  
+  .Bookcommercialsolar-subtitle {
+    font-size: 14px;
+  }
+  
+  .Bookcommercialsolar-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  
+  .Bookcommercialsolar-number {
+    font-size: 10px;
+    padding: 4px 10px;
+    top: -8px;
+    right: 25%;
+  }
+  
+  .Bookcommercialsolar-step h3 {
+    font-size: 17px;
+  }
+  
+  .Bookcommercialsolar-step p {
+    font-size: 13px;
+  }
+}

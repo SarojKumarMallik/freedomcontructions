@@ -1,0 +1,181 @@
+/* ===== SECTION ===== */
+
+.Solaramcfaq-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.Solaramcfaq-container {
+  max-width: 950px;
+  margin: auto;
+}
+
+/* ===== PREMIUM HEADING (Like Previous Section) ===== */
+
+.Solaramcfaq-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Solaramcfaq-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0A1A4A;
+}
+
+.Solaramcfaq-header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== FAQ ITEMS ===== */
+
+.Solaramcfaq-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.Solaramcfaq-item {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e6edf3;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 15px 40px rgba(10, 26, 74, 0.06);
+}
+
+.Solaramcfaq-item.active {
+  border-color: #FFD700;
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.1);
+}
+
+.Solaramcfaq-item:hover {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* QUESTION */
+
+.Solaramcfaq-question {
+  width: 100%;
+  padding: 20px 24px;
+  background: #f8fafc;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0A1A4A;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.Solaramcfaq-question:hover {
+  background: rgba(255, 215, 0, 0.05);
+  color: #FFD700;
+}
+
+.Solaramcfaq-icon {
+  transition: transform 0.4s ease;
+  font-size: 16px;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.Solaramcfaq-icon.rotate {
+  transform: rotate(45deg);
+}
+
+/* ANSWER */
+
+.Solaramcfaq-answer {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.Solaramcfaq-answer-inner {
+  padding: 20px 24px;
+}
+
+.Solaramcfaq-answer p {
+  font-size: 15px;
+  color: #5f6f81;
+  line-height: 1.8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+  .Solaramcfaq-header h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Solaramcfaq-section {
+    padding: 60px 20px;
+  }
+
+  .Solaramcfaq-header {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  .Solaramcfaq-header h2 {
+    font-size: 28px;
+  }
+
+  .Solaramcfaq-question {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+  
+  .Solaramcfaq-answer-inner {
+    padding: 16px 20px;
+  }
+
+  .Solaramcfaq-answer p {
+    font-size: 14px;
+  }
+  
+  .Solaramcfaq-icon {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Solaramcfaq-section {
+    padding: 50px 16px;
+  }
+  
+  .Solaramcfaq-header h2 {
+    font-size: 24px;
+  }
+  
+  .Solaramcfaq-question {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+  
+  .Solaramcfaq-answer-inner {
+    padding: 14px 16px;
+  }
+  
+  .Solaramcfaq-answer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Solaramcfaq-header h2 {
+    font-size: 22px;
+  }
+  
+  .Solaramcfaq-question {
+    font-size: 12px;
+  }
+}

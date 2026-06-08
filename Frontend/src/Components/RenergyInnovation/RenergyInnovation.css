@@ -1,0 +1,232 @@
+/* ================= RENERGY SECTION ================= */
+.renergy {
+  background: linear-gradient(135deg, #0A1A4A, #071238);
+  padding: 60px 0;
+}
+
+.renergy_container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* ================= HEADER ================= */
+.renergy_header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 100px;
+}
+
+.renergy_header h2 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.renergy_header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.renergy_header p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+}
+
+/* ================= PROCESS ================= */
+.renergy_process {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ENERGY LINE */
+.energy_line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(
+    180deg,
+    #FFD700,
+    #E6B800,
+    #ffffff
+  );
+  transform: translateX(-50%);
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+/* STEP */
+.energy_step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.energy_step.left {
+  justify-content: flex-start;
+}
+
+.energy_step.right {
+  justify-content: flex-end;
+}
+
+/* ICON */
+.energy_icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #0A1A4A;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 10px rgba(255, 215, 0, 0.15);
+  z-index: 2;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+}
+
+/* CARD */
+.energy_card {
+  width: 360px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 28px 26px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.energy_card:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.energy_card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.energy_card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+}
+
+/* POSITION LEFT / RIGHT */
+.energy_step.left .energy_card {
+  margin-right: auto;
+}
+
+.energy_step.right .energy_card {
+  margin-left: auto;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .renergy_header h2 {
+    font-size: 44px;
+  }
+
+  .energy_card {
+    width: 320px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+  .renergy {
+    padding-bottom: 60px;
+  }
+
+  .energy_line {
+    left: 24px;
+  }
+
+  .energy_icon {
+    left: 24px;
+    transform: none;
+  }
+
+  .energy_step {
+    justify-content: flex-start !important;
+  }
+
+  .energy_card {
+    width: calc(100% - 90px);
+    margin-left: 90px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .renergy {
+    padding-bottom: 60px;
+  }
+
+  .renergy_header {
+    margin-bottom: 70px;
+  }
+
+  .renergy_header h2 {
+    font-size: 34px;
+  }
+
+  .renergy_header p {
+    font-size: 15px;
+  }
+
+  .energy_card {
+    padding: 22px;
+  }
+
+  .energy_icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .energy_card {
+    width: calc(100% - 70px);
+    margin-left: 70px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .renergy_header h2 {
+    font-size: 28px;
+  }
+  
+  .energy_icon {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+  
+  .energy_card {
+    width: calc(100% - 65px);
+    margin-left: 65px !important;
+  }
+  
+  .energy_card h4 {
+    font-size: 16px;
+  }
+  
+  .energy_card p {
+    font-size: 12px;
+  }
+}

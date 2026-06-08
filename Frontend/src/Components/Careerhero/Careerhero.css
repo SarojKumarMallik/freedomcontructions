@@ -1,0 +1,316 @@
+:root {
+  --bsp-primary: #0f3d5e;
+  --bsp-accent: #1e88e5;
+  --bsp-light-bg: #f7fafd;
+  --bsp-border: #e6edf5;
+  --bsp-text: #1e293b;
+  --bsp-text-light: #64748b;
+}
+
+/* SECTION */
+.careerhero-section {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafd 100%);
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+.careerhero-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.careerhero-left {
+  flex: 1;
+}
+
+.careerhero-badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bsp-accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(30, 136, 229, 0.1);
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.careerhero-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 25px 0;
+  color: var(--bsp-primary);
+  font-weight: 700;
+}
+
+.careerhero-left h1 span {
+  background: linear-gradient(90deg, #0f3d5e, #1e88e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.careerhero-description {
+  color: var(--bsp-text-light);
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* VALUES */
+.careerhero-values {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.careerhero-values::before {
+  content: "";
+  position: absolute;
+  left: 27px;
+  top: 10px;
+  height: 85%;
+  width: 2px;
+  background: linear-gradient(to bottom, #1e88e5, transparent);
+}
+
+.careerhero-value {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  align-items: flex-start;
+}
+
+.careerhero-value h4 {
+  margin: 0 0 5px 0;
+  color: var(--bsp-primary);
+  font-size: 18px;
+}
+
+.careerhero-value p {
+  margin: 0;
+  color: var(--bsp-text-light);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.careerhero-icon {
+  background: linear-gradient(135deg, #1e88e5, #0f3d5e);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(30, 136, 229, 0.2);
+  flex-shrink: 0;
+}
+
+/* BUTTON */
+.careerhero-btn {
+  padding: 16px 36px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, #1e88e5, #0f3d5e);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(30, 136, 229, 0.25);
+}
+
+.careerhero-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(30, 136, 229, 0.35);
+}
+
+/* RIGHT SIDE CARD */
+.careerhero-right {
+  flex: 1;
+}
+
+.careerhero-card {
+  background: white;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 30px 70px rgba(15, 61, 94, 0.08);
+  border: 1px solid var(--bsp-border);
+  transition: transform 0.3s ease;
+}
+
+.careerhero-card:hover {
+  transform: translateY(-5px);
+}
+
+.careerhero-card h2 {
+  color: var(--bsp-primary);
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.careerhero-card > p {
+  color: var(--bsp-text-light);
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* FAQ */
+.careerhero-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.careerhero-faq-item {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--bsp-border);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.careerhero-faq-item:hover {
+  border-color: var(--bsp-accent);
+  box-shadow: 0 5px 15px rgba(30, 136, 229, 0.1);
+}
+
+.careerhero-faq-question {
+  width: 100%;
+  padding: 20px;
+  background: #f8fafc;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--bsp-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.careerhero-faq-question:hover {
+  background: #f1f5f9;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  color: var(--bsp-accent);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.careerhero-faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.careerhero-faq-answer {
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: white;
+}
+
+.careerhero-faq-answer p {
+  padding: 0 20px 20px 20px;
+  margin: 0;
+  color: var(--bsp-text-light);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .careerhero-container {
+    gap: 60px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .careerhero-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .careerhero-left h1 {
+    font-size: 42px;
+  }
+  
+  .careerhero-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .careerhero-section {
+    padding: 60px 20px;
+  }
+  
+  .careerhero-left h1 {
+    font-size: 36px;
+  }
+  
+  .careerhero-card {
+    padding: 40px;
+  }
+  
+  .careerhero-card h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .careerhero-left h1 {
+    font-size: 30px;
+  }
+  
+  .careerhero-left h1 br {
+    display: none;
+  }
+
+  .careerhero-card {
+    padding: 30px 25px;
+  }
+  
+  .careerhero-card h2 {
+    font-size: 24px;
+  }
+  
+  .careerhero-btn {
+    padding: 14px 30px;
+    width: 100%;
+  }
+  
+  .careerhero-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .careerhero-description {
+    font-size: 16px;
+  }
+  
+  .careerhero-faq-question {
+    padding: 16px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,209 @@
+/* ================= WRAPPER ================= */
+
+.Commercialsystemsize-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f8fbff, #ffffff);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold glow effect */
+.Commercialsystemsize-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04), transparent 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.Commercialsystemsize-container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= HEADER ================= */
+
+.Commercialsystemsize-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Commercialsystemsize-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0A1A4A;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+
+.Commercialsystemsize-header h2 span {
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Commercialsystemsize-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #5f6f81;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ================= TABLE ================= */
+
+.Commercialsystemsize-table {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(10, 26, 74, 0.06);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+/* Table Head - Updated to Gold Gradient */
+.Commercialsystemsize-table-head {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  background: linear-gradient(135deg, #FFD700, #E6B800);
+  color: #0A1A4A;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 18px 24px;
+}
+
+/* Table Rows */
+.Commercialsystemsize-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e6edf3;
+  transition: all 0.3s ease;
+}
+
+.Commercialsystemsize-table-row:last-child {
+  border-bottom: none;
+}
+
+.Commercialsystemsize-table-row:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+/* Size Highlight - Updated to Gold */
+.Commercialsystemsize-size {
+  font-weight: 600;
+  color: #FFD700;
+}
+
+.Commercialsystemsize-ideal {
+  color: #0A1A4A;
+}
+
+/* ================= NOTE - Updated to Gold Border ================= */
+
+.Commercialsystemsize-note {
+  margin-top: 25px;
+  padding: 18px 20px;
+  background: #f8fafc;
+  border-left: 4px solid #FFD700;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #5f6f81;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .Commercialsystemsize-wrapper {
+    padding: 60px 20px;
+  }
+  
+  .Commercialsystemsize-header h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Commercialsystemsize-wrapper {
+    padding: 50px 16px;
+  }
+  
+  .Commercialsystemsize-header {
+    margin-bottom: 45px;
+  }
+  
+  .Commercialsystemsize-header h2 {
+    font-size: 28px;
+  }
+  
+  .Commercialsystemsize-header p {
+    font-size: 15px;
+  }
+
+  .Commercialsystemsize-table-head {
+    display: none;
+  }
+
+  .Commercialsystemsize-table-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px;
+  }
+
+  .Commercialsystemsize-table-row::before {
+    content: "Commercial Solar Size";
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .Commercialsystemsize-size {
+    font-size: 16px;
+  }
+
+  .Commercialsystemsize-ideal {
+    font-size: 14px;
+    color: #5f6f81;
+  }
+}
+
+@media (max-width: 576px) {
+  .Commercialsystemsize-header h2 {
+    font-size: 24px;
+  }
+  
+  .Commercialsystemsize-header p {
+    font-size: 14px;
+  }
+  
+  .Commercialsystemsize-table-row {
+    padding: 15px;
+  }
+  
+  .Commercialsystemsize-size {
+    font-size: 15px;
+  }
+  
+  .Commercialsystemsize-ideal {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Commercialsystemsize-header h2 {
+    font-size: 22px;
+  }
+  
+  .Commercialsystemsize-note {
+    font-size: 12px;
+    padding: 14px 16px;
+  }
+}
